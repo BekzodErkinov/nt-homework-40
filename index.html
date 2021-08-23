@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GOmovies</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/GOmovies.png" alt="LOGO" width="200" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item genres-wrap">
+              <span class="nav-link">Genre</span>
+              <ul class="genres bg-dark list-unstyled">
+                <li><a class="p-4" href="#">Action</a></li>
+                <li><a class="p-4" href="#">Adventure</a></li>
+                <li><a class="p-4" href="#">Comedy</a></li>
+                <li><a class="p-4" href="#">Documentary</a></li>
+                <li><a class="p-4" href="#">Drama</a></li>
+                <li><a class="p-4" href="#">Family</a></li>
+                <li><a class="p-4" href="#">History</a></li>
+                <li><a class="p-4" href="#">Music</a></li>
+                <li><a class="p-4" href="#">Horror</a></li>
+                <li><a class="p-4" href="#">Fantasy</a></li>
+                <li><a class="p-4" href="#">TV Movie</a></li>
+                <li><a class="p-4" href="#">War</a></li>
+              </ul>
+            </li>
+            <li class="nav-item country-wrap">
+              <span class="nav-link">Country</span>
+              <ul class="country bg-dark list-unstyled">
+                <li><a href="#" class="p-4">Australia</a></li>
+                <li><a href="#" class="p-4">Azerbaijan</a></li>
+                <li><a href="#" class="p-4">Belgium</a></li>
+                <li><a href="#" class="p-4">Canada</a></li>
+                <li><a href="#" class="p-4">Colombia</a></li>
+                <li><a href="#" class="p-4">Cuba</a></li>
+                <li><a href="#" class="p-4">Egypt</a></li>
+                <li><a href="#" class="p-4">Georgia</a></li>
+                <li><a href="#" class="p-4">Germany</a></li>
+                <li><a href="#" class="p-4">Latvia</a></li>
+                <li><a href="#" class="p-4">Malaysia</a></li>
+                <li><a href="#" class="p-4">New Zealand</a></li>
+                <li><a href="#" class="p-4">Pakistan</a></li>
+                <li><a href="#" class="p-4">Palestine</a></li>
+                <li><a href="#" class="p-4">Panama</a></li>
+                <li><a href="#" class="p-4">Paraguay</a></li>
+                <li><a href="#" class="p-4">Philippines</a></li>
+                <li><a href="#" class="p-4">Portugal</a></li>
+                <li><a href="#" class="p-4">Qatar</a></li>
+                <li><a href="#" class="p-4">Russia</a></li>
+                <li><a href="#" class="p-4">Saudi Arabia</a></li>
+                <li><a href="#" class="p-4">Serbia</a></li>
+                <li><a href="#" class="p-4">Sweden</a></li>
+                <li><a href="#" class="p-4">Switzerland</a></li>
+                <li><a href="#" class="p-4">Thailand</a></li>
+                <li><a href="#" class="p-4">Turkey</a></li>
+                <li><a href="#" class="p-4">Ukraine</a></li>
+                <li><a href="#" class="p-4">UK</a></li>
+                <li><a href="#" class="p-4">United Arab Emirates</a></li>
+                <li><a href="#" class="p-4">Uruguay</a></li>
+                <li><a href="#" class="p-4">USA</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trailer</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" method="POST">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 px-3 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+    <button class="kino-yuklash mx-auto d-block btn btn-lg btn-primary" type="button">Load Movies</button>
+      <div class="row kinolar">
+      </div>
+    </div>
+  </main>
+
+  <template id="kinolar-template">
+    <div class="col-md-3 my-4">
+      <img class="p-0 rounded-lg" width="250" src="https://picsum.photos/300" alt="">
+      <h3 class="movie-name"><span class="movie-date ml-auto h6"></span></h3>
+      <span class="movie-genre d-block"></span>
+    </div>
+  </template>
+
+  <footer class="site-footer bg-dark ">
+    <div class="container">
+      <ul class="socials">
+        <li class="socials__item"><a class="socials__link telegram" href="#"></a></li>
+        <li class="socials__item"><a class="socials__link facebook" href="#"></a></li>
+        <li class="socials__item"><a class="socials__link twitter" href="#"></a></li>
+        <li class="socials__item"><a class="socials__link instagram" href="#"></a></li>
+      </ul>
+      <p class="site-footer__text text-center h5">2019 &copy;</p>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/kinolar.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
